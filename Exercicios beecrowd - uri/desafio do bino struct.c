@@ -1,18 +1,23 @@
 #include <stdio.h>
 
-int main(void) {
+struct multiplos{
+int N[1];
+};
 
-int N[0];
-int L, n;
+int main() {
+
+struct multiplos mult;
+int L, n, tam;
 //var dos multiplos de 2,3,4 e 5
 int m2 = 0, m3 = 0, m4 = 0, m5 = 0;
 
 scanf("%d", &n); //obtendo o tamanho do vet
-N[0] = N[n];
+mult.N[n] = mult.N[1];
+  tam = n;
   
-  for(int i = 0; i < n; i++){
+  for(int i = 1; i <= tam; i++){
     scanf("%d", &L);
-      N[i] = L; 
+     mult.N[i] = L; 
     if(L%2 == 0){
       m2++; 
     }if(L%3 == 0){
